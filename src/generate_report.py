@@ -18,9 +18,6 @@ def generate_report():
     author = doc.add_paragraph('Author: Yohaan Saji')
     author.alignment = WD_ALIGN_PARAGRAPH.CENTER
     
-    date = doc.add_paragraph(f'Date: {datetime.now().strftime("%B %d, %Y")}')
-    date.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    
     doc.add_page_break()
     
     # 2. Introduction & Problem Statement
